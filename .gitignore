@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+errno/include/scic/errno/config.h
+build/*
+tmp/*
+install/*
+docs/build/*
