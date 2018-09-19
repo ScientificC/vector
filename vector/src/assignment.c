@@ -35,7 +35,7 @@ scic_vector_copy(scic_vector_t *destination, scic_vector_t *source)
         destination->element_size = source->element_size;
 
         /* Note that we are not necessarily allocating the same capacity */
-        destination->data = malloc(source->capacity * element_size);
+        destination->data = malloc(source->capacity * destination->element_size);
 
         VECTOR_MALLOC_ERROR(destination->data);
 
