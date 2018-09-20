@@ -24,7 +24,7 @@ _scic_vector_should_shrink(scic_vector_t *vector)
 
 
 size_t
-sc_ic_vector_free_bytes(const scic_vector_t *vector)
+_scic_vector_free_bytes(const scic_vector_t *vector)
 {
         return scic_vector_free_space(vector) * vector->element_size;
 }
