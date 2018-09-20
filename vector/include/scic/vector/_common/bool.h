@@ -1,9 +1,9 @@
-#ifndef _CML_COMMON_H_
-#error "Never use <cml/_common/bool.h> directly; include <cml.h> instead."
+#ifndef _SCIC_COMMON_H_
+#error "Never use <scic/vector/_common/bool.h> directly; include <cml.h> instead."
 #endif
 
-#ifndef CML_BOOL_H
-#define CML_BOOL_H
+#ifndef SCIC_BOOL_H
+#define SCIC_BOOL_H
 
 #ifndef __cplusplus
 
