@@ -1,12 +1,12 @@
 #include <stdlib.h>
-#include <scic/vector/_common/bool.h>
-
 #include <scic/errno.h>
 #include <scic/vector.h>
 
+#include <scic/vector/_common/bool.h>
+
 
 bool 
-scic_vector_should_grow(scic_vector_t *vector) 
+_scic_vector_should_grow(scic_vector_t *vector) 
 {
 	// TODO: assert(vector->size <= vector->capacity);
 
@@ -15,7 +15,7 @@ scic_vector_should_grow(scic_vector_t *vector)
 
 
 bool 
-scic_vector_should_shrink(scic_vector_t *vector) 
+_scic_vector_should_shrink(scic_vector_t *vector) 
 {
 	// TODO: assert(vector->size <= vector->capacity);
 
@@ -24,28 +24,28 @@ scic_vector_should_shrink(scic_vector_t *vector)
 
 
 size_t 
-scic_vector_free_bytes(const scic_vector_t *vector) 
+sc_ic_vector_free_bytes(const scic_vector_t *vector) 
 {
 	return scic_vector_free_space(vector) * vector->element_size;
 }
 
 
 void *
-scic_vector_offset(scic_vector_t *vector, size_t index) 
+_scic_vector_offset(scic_vector_t *vector, size_t index) 
 {
 	return vector->data + (index * vector->element_size);
 }
 
 
 const void *
-scic_vector_const_offset(const scic_vector_t *vector, size_t index) 
+_scic_vector_const_offset(const scic_vector_t *vector, size_t index) 
 {
 	return vector->data + (index * vector->element_size);
 }
 
 
 void 
-scic_vector_assign(scic_vector_t *vector, size_t index, void *element) 
+_scic_vector_assign(scic_vector_t *vector, size_t index, void *element) 
 {
 	/* Insert the element */
 	void *offset = scic_vector_offset(vector, index);
@@ -53,8 +53,8 @@ scic_vector_assign(scic_vector_t *vector, size_t index, void *element)
 }
 
 
-int 
-scic_vector_move_right(scic_vector_t *vector, size_t index) 
+int
+_scic_vector_move_right(scic_vector_t *vector, size_t index) 
 {
 	// TODO: assert(vector->size < vector->capacity);
 
@@ -87,7 +87,7 @@ scic_vector_move_right(scic_vector_t *vector, size_t index)
 
 
 void 
-scic_vector_move_left(scic_vector_t *vector, size_t index) 
+_scic_vector_move_left(scic_vector_t *vector, size_t index) 
 {
 	size_t right_elements_in_bytes;
 	void *offset;
@@ -102,16 +102,16 @@ scic_vector_move_left(scic_vector_t *vector, size_t index)
 }
 
 
-int 
-scic_vector_adjust_capacity(scic_vector_t *vector) 
+int
+_scic_vector_adjust_capacity(scic_vector_t *vector) 
 {
 	return 
-    scic_vector_reallocate(vector, MAX(1, vector->size * SCIC_VECTOR_GROWTH_FACTOR));
+    _scic_vector_reallocate(vector, MAX(1, vector->size * SCIC_VECTOR_GROWTH_FACTOR));
 }
 
 
-int 
-scic_vector_reallocate(scic_vector_t *vector, size_t new_capacity) 
+int
+_scic_vector_reallocate(scic_vector_t *vector, size_t new_capacity) 
 {
 	void *old;
 	size_t new_capacity_in_bytes;
@@ -157,7 +157,7 @@ scic_vector_reallocate(scic_vector_t *vector, size_t new_capacity)
 
 
 void 
-scic_vector_swap(size_t *first, size_t *second) 
+_scic_vector_swap(size_t *first, size_t *second) 
 {
 	size_t temp = *first;
 
