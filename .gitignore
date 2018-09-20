@@ -51,7 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-errno/include/scic/errno/config.h
+vector/include/scic/vector/config.h
 build/*
 tmp/*
 install/*
