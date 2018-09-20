@@ -1,12 +1,16 @@
 #include <stdlib.h>
+#include <string.h>
 #include <scic/errno.h>
 #include <scic/vector.h>
 
+#define _SCIC_COMMON_H_ 1
+
 #include <scic/vector/_common/bool.h>
+#include <scic/vector/_private/error.h>
 
 
 bool
-_scic_vector_should_grow(scic_vector_t *vector)
+_vector_should_grow(vector_t *vector)
 {
         // TODO: assert(vector->size <= vector->capacity);
 
@@ -15,51 +19,51 @@ _scic_vector_should_grow(scic_vector_t *vector)
 
 
 bool
-_scic_vector_should_shrink(scic_vector_t *vector)
+_vector_should_shrink(vector_t *vector)
 {
         // TODO: assert(vector->size <= vector->capacity);
 
-        return vector->size == vector->capacity * SCIC_VECTOR_SHRINK_THRESHOLD;
+        return vector->size == vector->capacity * VECTOR_SHRINK_THRESHOLD;
 }
 
 
 size_t
-_scic_vector_free_bytes(const scic_vector_t *vector)
+_vector_free_bytes(const vector_t *vector)
 {
-        return scic_vector_free_space(vector) * vector->element_size;
+        return vector_free_space(vector) * vector->element_size;
 }
 
 
 void *
-_scic_vector_offset(scic_vector_t *vector, size_t index)
+_vector_offset(vector_t *vector, size_t index)
 {
         return vector->data + (index * vector->element_size);
 }
 
 
 const void *
-_scic_vector_const_offset(const scic_vector_t *vector, size_t index)
+_vector_const_offset(const vector_t *vector, size_t index)
 {
         return vector->data + (index * vector->element_size);
 }
 
 
 void
-_scic_vector_assign(scic_vector_t *vector, size_t index, void *element)
+_vector_assign(vector_t *vector, size_t index, void *element)
 {
         /* Insert the element */
-        void *offset = scic_vector_offset(vector, index);
+        void *offset = _vector_offset(vector, index);
         memcpy(offset, element, vector->element_size);
 }
 
 
 int
-_scic_vector_move_right(scic_vector_t *vector, size_t index)
+_vector_move_right(vector_t *vector, size_t index)
 {
         // TODO: assert(vector->size < vector->capacity);
 
         /* The location where to start to move from. */
-        void *offset = scic_vector_offset(vector, index);
+        void *offset = _vector_offset(vector, index);
 
         /* How many to move to the right. */
         size_t elements_in_bytes = (vector->size - index) * vector->element_size;
@@ -74,10 +78,10 @@ _scic_vector_move_right(scic_vector_t *vector, size_t index)
                 right_capacity_in_bytes,
                 offset,
                 elements_in_bytes
-                );
+        );
         /* clang-format on */
 
-        return return_code == 0 ? SCIC_SUCCESS : SCIC_VECTOR_ERROR;
+        return return_code == 0 ? SCIC_SUCCESS : SCIC_FAILURE;
 
 #else
         memmove(offset + vector->element_size, offset, elements_in_bytes);
@@ -87,13 +91,13 @@ _scic_vector_move_right(scic_vector_t *vector, size_t index)
 
 
 void
-_scic_vector_move_left(scic_vector_t *vector, size_t index)
+_vector_move_left(vector_t *vector, size_t index)
 {
         size_t right_elements_in_bytes;
         void *offset;
 
         /* The offset into the memory */
-        offset = scic_vector_offset(vector, index);
+        offset = _vector_offset(vector, index);
 
         /* How many to move to the left */
         right_elements_in_bytes = (vector->size - index - 1) * vector->element_size;
@@ -103,49 +107,49 @@ _scic_vector_move_left(scic_vector_t *vector, size_t index)
 
 
 int
-_scic_vector_adjust_capacity(scic_vector_t *vector)
+_vector_adjust_capacity(vector_t *vector)
 {
         return
-                _scic_vector_reallocate(vector, MAX(1, vector->size * SCIC_VECTOR_GROWTH_FACTOR));
+                _vector_reallocate(vector, MAX(1, vector->size * VECTOR_GROWTH_FACTOR));
 }
 
 
 int
-_scic_vector_reallocate(scic_vector_t *vector, size_t new_capacity)
+_vector_reallocate(vector_t *vector, size_t new_capacity)
 {
         void *old;
         size_t new_capacity_in_bytes;
 
-        VECTOR_NULL_POINTER_ERROR(vector);
+        VECTOR_NULL_POINTER(vector);
 
-        if (new_capacity < SCIC_VECTOR_MINIMUM_CAPACITY)
+        if (new_capacity < VECTOR_MINIMUM_CAPACITY)
         {
-                if (vector->capacity <= SCIC_VECTOR_MINIMUM_CAPACITY)
+                if (vector->capacity <= VECTOR_MINIMUM_CAPACITY)
                 {
                         return SCIC_SUCCESS;
                 }
 
-                new_capacity = SCIC_VECTOR_MINIMUM_CAPACITY;
+                new_capacity = VECTOR_MINIMUM_CAPACITY;
         }
 
         new_capacity_in_bytes = new_capacity * vector->element_size;
         old = vector->data;
 
         vector->data = malloc(new_capacity_in_bytes);
-        VECTOR_MALLOC_ERROR(vector->data);
+        VECTOR_MALLOC(vector->data);
 
 #ifdef __STDC_LIB_EXT1__
         /* clang-format off */
         if (memcpy_s(vector->data,
                      new_capacity_in_bytes,
                      old,
-                     scic_vector_byte_size(vector)) != 0)
+                     vector_byte_size(vector)) != 0)
         {
-                return SCIC_VECTOR_ERROR;
+                return SCIC_FAILURE;
         }
 /* clang-format on */
 #else
-        memcpy(vector->data, old, scic_vector_byte_size(vector));
+        memcpy(vector->data, old, vector_byte_size(vector));
 #endif
 
         vector->capacity = new_capacity;
@@ -157,7 +161,7 @@ _scic_vector_reallocate(scic_vector_t *vector, size_t new_capacity)
 
 
 void
-_scic_vector_swap(size_t *first, size_t *second)
+_vector_swap(size_t *first, size_t *second)
 {
         size_t temp = *first;
 
