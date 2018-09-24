@@ -4,7 +4,7 @@
 
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A pure-C math library with a great variety of mathematical functions. Seeks to be close to C89/C90 compliant for portability.")
 SET(CPACK_PACKAGE_VENDOR "Ulises Jeremias Cornejo Fandos")
-SET(CPACK_PACKAGE_URL "https://github.com/ScientificC/errno/")
+SET(CPACK_PACKAGE_URL "https://github.com/ScientificC/vector/")
 SET(CPACK_PACKAGE_CONTACT "ulisescf.24@gmail.com")
 SET(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
 SET(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")

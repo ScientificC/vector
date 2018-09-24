@@ -1,0 +1,615 @@
+~/Documents/Projects/Github/vector/bin ~/Documents/Projects/Github/vector/bin
+./uncrustify.cfg:1400: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./example/vector-basic.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./example/vector-basic.c:4: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./example/vector-basic.c:5: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./example/vector-basic.c:19: ERROR:POINTER_LOCATION: "(foo*)" should be "(foo *)"
+./example/vector-basic.c:20: ERROR:POINTER_LOCATION: "(foo*)" should be "(foo *)"
+./example/vector-basic.c:22: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./example/vector-basic.c:27: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./example/vector-basic.c:35: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./vector/include/scic/vector.h:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/include/scic/vector.h:19: WARNING:NEW_TYPEDEFS: do not add new typedefs
+./vector/include/scic/vector.h:19: WARNING:CONST_STRUCT: struct  should normally be const
+./vector/include/scic/vector.h:27: WARNING:NEW_TYPEDEFS: do not add new typedefs
+./vector/include/scic/vector.h:27: WARNING:CONST_STRUCT: struct  should normally be const
+./vector/include/scic/vector.h:73: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./vector/include/scic/vector.h:74: ERROR:POINTER_LOCATION: "(foo*)" should be "(foo *)"
+./vector/include/scic/vector.h:93: ERROR:POINTER_LOCATION: "(foo*)" should be "(foo *)"
+./vector/include/scic/vector.h:93: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./vector/include/scic/vector.h:109: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'vector_pointer' - possible side-effects?
+./vector/include/scic/vector.h:109: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'iterator_name' - possible side-effects?
+./vector/include/scic/vector.h:119: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'a' - possible side-effects?
+./vector/include/scic/vector.h:119: CHECK:MACRO_ARG_REUSE: Macro argument reuse 'b' - possible side-effects?
+./vector/include/scic/vector/_private/error.h:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/include/scic/vector/_private/error.h:8: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/include/scic/vector/_private/error.h:11: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:11: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_pointer' may be better as '(_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:12: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:12: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:12: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "!_pointer"
+./vector/include/scic/vector/_private/error.h:13: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:13: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:14: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:14: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:15: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:16: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:16: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:17: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:18: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:18: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:20: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:20: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_pointer' may be better as '(_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:21: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:21: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:21: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "!_pointer"
+./vector/include/scic/vector/_private/error.h:22: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:22: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:23: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:23: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:24: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:24: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:25: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:25: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:26: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:26: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:27: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:27: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:29: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:29: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_vector_pointer' may be better as '(_vector_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:29: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_index' may be better as '(_index)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:30: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:30: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:31: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:31: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:32: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:32: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:33: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:33: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:34: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:34: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:35: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:35: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:36: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:36: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:38: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:38: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_vector_pointer' may be better as '(_vector_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:39: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:39: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:40: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:40: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:41: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:41: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:42: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:42: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:43: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:43: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:44: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:44: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:45: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:45: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:49: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/include/scic/vector/_private/error.h:50: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/include/scic/vector/_private/error.h:53: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:53: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_pointer' may be better as '(_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:54: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:54: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:54: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "!_pointer"
+./vector/include/scic/vector/_private/error.h:55: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:55: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:56: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:56: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:57: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:57: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:58: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:58: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:59: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:59: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:60: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:60: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:61: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:61: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:63: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:63: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_pointer' may be better as '(_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:64: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:64: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:64: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "!_pointer"
+./vector/include/scic/vector/_private/error.h:65: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:65: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:66: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:66: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:67: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:67: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:68: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:68: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:69: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:69: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:70: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:70: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:71: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:71: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:73: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:73: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_vector_pointer' may be better as '(_vector_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:73: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_index' may be better as '(_index)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:74: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:74: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:75: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:75: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:76: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:76: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:77: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:77: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:78: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:78: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:79: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:79: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:80: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:80: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:81: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:81: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:83: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_private/error.h:83: CHECK:MACRO_ARG_PRECEDENCE: Macro argument '_vector_pointer' may be better as '(_vector_pointer)' to avoid precedence issues
+./vector/include/scic/vector/_private/error.h:84: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:84: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:85: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:85: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:86: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:86: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:87: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:87: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:88: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:88: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:89: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:89: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:90: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:90: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_private/error.h:91: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_private/error.h:91: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/bool.h:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/include/scic/vector/_common/bool.h:12: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/bool.h:12: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/bool.h:13: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/bool.h:13: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/bool.h:14: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/bool.h:14: CHECK:LOGICAL_CONTINUATIONS: Logical continuations should be on the previous line
+./vector/include/scic/vector/_common/bool.h:14: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/bool.h:15: WARNING:NEW_TYPEDEFS: do not add new typedefs
+./vector/include/scic/vector/_common/bool.h:25: WARNING:NEW_TYPEDEFS: do not add new typedefs
+./vector/include/scic/vector/_common/bool.h:26: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/bool.h:26: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/bool.h:27: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/bool.h:27: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/inline.h:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/include/scic/vector/_common/inline.h:9: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:11: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:11: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./vector/include/scic/vector/_common/inline.h:16: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:16: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./vector/include/scic/vector/_common/inline.h:18: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:20: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:21: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/inline.h:25: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/include/scic/vector/_common/default.h:10: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:11: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:12: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:13: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:14: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:16: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:17: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:18: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:25: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:26: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:28: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:29: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:29: ERROR:COMPLEX_MACRO: Macros with complex values should be enclosed in parentheses
+./vector/include/scic/vector/_common/default.h:31: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:32: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:33: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:34: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:35: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:36: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:40: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:41: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:47: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:48: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:48: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/default.h:52: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:53: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:53: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/include/scic/vector/_common/default.h:57: WARNING:LONG_LINE_COMMENT: line over 80 characters
+./vector/include/scic/vector/_common/default.h:60: ERROR:MULTISTATEMENT_MACRO_USE_DO_WHILE: Macros starting with if should be enclosed by a do - while loop to avoid possible if/else logic defects
+./vector/include/scic/vector/_common/default.h:60: CHECK:MACRO_ARG_PRECEDENCE: Macro argument 'x' may be better as '(x)' to avoid precedence issues
+./vector/include/scic/vector/_common/default.h:60: WARNING:BRACES: braces {} are not necessary for single statement blocks
+./vector/include/scic/vector/_common/default.h:64: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:66: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:70: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:71: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:72: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:73: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:74: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/include/scic/vector/_common/default.h:75: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/assignment.c:10: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:10: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:12: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:12: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:13: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:13: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:14: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:14: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:15: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:17: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:19: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:19: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:26: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:26: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:27: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:27: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:29: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:29: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:29: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:30: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:30: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:30: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:32: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:32: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:33: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:33: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:34: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:34: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:36: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:37: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:37: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:39: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:39: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:41: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:41: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:43: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:43: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:50: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:50: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:51: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:51: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:53: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:53: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:53: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:54: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:54: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:54: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:56: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:56: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:58: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:58: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:65: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:65: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:66: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:66: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:68: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:68: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:69: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:69: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:71: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:71: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:78: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:78: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:80: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:80: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:87: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:87: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:89: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:89: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:90: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:90: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:92: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:92: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:92: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:93: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:93: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:93: ERROR:TRAILING_STATEMENTS: trailing statements should be on next line
+./vector/src/vector/assignment.c:95: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:95: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:96: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:96: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:97: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:97: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:99: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:99: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:100: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:100: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:101: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:101: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:103: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:103: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:110: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:110: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:112: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:112: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:114: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:114: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/assignment.c:116: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/assignment.c:116: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/private.c:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:17: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:24: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:26: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:26: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:33: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:33: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:40: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:40: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:47: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:47: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:54: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:55: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:55: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:56: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:56: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:63: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:65: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:66: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:66: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:68: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:69: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:69: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:72: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:72: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:73: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:73: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:75: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:76: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:76: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:76: CHECK:OPEN_ENDED_LINE: Lines should not end with a '('
+./vector/src/vector/private.c:77: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:77: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:78: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:78: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:79: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:79: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:80: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:80: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:81: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:81: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:82: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:84: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:84: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:87: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:87: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:88: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:88: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:96: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:96: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:97: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:97: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:99: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:100: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:100: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:102: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:103: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:103: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:105: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:105: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:112: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:112: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:113: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:113: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:120: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:120: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:121: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:121: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:123: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:123: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:125: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:125: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:126: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:126: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:127: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:127: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:128: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:128: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:129: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:129: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:130: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:130: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:132: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:132: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:133: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:133: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:135: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:135: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:136: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:136: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:138: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:138: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:139: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:139: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:142: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:143: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:143: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:144: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:144: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:145: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:145: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:146: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:146: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:147: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:147: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:148: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:148: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:149: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:149: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:152: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:152: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:155: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:155: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:157: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:157: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:159: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:159: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:166: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:166: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:168: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:168: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:169: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/private.c:169: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/private.c:170: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./vector/src/vector/information.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/information.c:6: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./vector/src/vector/information.c:8: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/information.c:8: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/information.c:8: CHECK:COMPARISON_TO_NULL: Comparison to NULL could be written "vector->data"
+./vector/src/vector/information.c:13: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./vector/src/vector/information.c:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/information.c:15: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/information.c:20: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./vector/src/vector/information.c:22: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/information.c:22: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/information.c:27: ERROR:POINTER_LOCATION: "foo* bar" should be "foo *bar"
+./vector/src/vector/information.c:29: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/information.c:29: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/deletion.c:12: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:13: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:16: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:18: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/deletion.c:18: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:18: CHECK:OPEN_ENDED_LINE: Lines should not end with a '('
+./vector/src/vector/deletion.c:19: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/deletion.c:19: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:19: WARNING:EMBEDDED_FUNCTION_NAME: Prefer using '"%s...", __func__' to using 'vector_pop_back', this function's name, in a string
+./vector/src/vector/deletion.c:20: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:20: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/deletion.c:20: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:21: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/deletion.c:21: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:22: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:27: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:28: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:37: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:38: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:44: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:45: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:47: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:48: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:55: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:56: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/deletion.c:65: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:66: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/deletion.c:69: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./vector/src/vector/lookup.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/lookup.c:12: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/lookup.c:23: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/lookup.c:34: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/lookup.c:41: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/lookup.c:44: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./vector/src/vector/insertion.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/insertion.c:15: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:19: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:19: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:20: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:21: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:21: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/insertion.c:21: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:21: WARNING:SUSPECT_CODE_INDENT: suspect code indent for conditional statements (8, 12)
+./vector/src/vector/insertion.c:21: ERROR:ASSIGN_IN_IF: do not use assignment in if condition
+./vector/src/vector/insertion.c:22: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/insertion.c:22: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:23: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/insertion.c:23: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:24: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/insertion.c:24: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:25: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:27: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:28: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:30: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:37: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:41: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:42: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:45: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:47: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:48: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:49: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:51: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:52: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:53: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:53: ERROR:ASSIGN_IN_IF: do not use assignment in if condition
+./vector/src/vector/insertion.c:54: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/insertion.c:54: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:60: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:60: ERROR:ASSIGN_IN_IF: do not use assignment in if condition
+./vector/src/vector/insertion.c:61: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:75: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:76: ERROR:TRAILING_WHITESPACE: trailing whitespace
+./vector/src/vector/insertion.c:79: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:80: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/insertion.c:85: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./vector/src/vector/memory.c:1: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 1
+./vector/src/vector/memory.c:10: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:10: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:11: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:11: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:12: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:12: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:14: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:14: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:15: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:15: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:16: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:16: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:17: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:17: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:18: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:18: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:19: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:19: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:20: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:20: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:21: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:21: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:22: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:22: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:23: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:23: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:24: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:24: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:25: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:25: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:27: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:27: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:29: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:29: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:36: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:36: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:37: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:37: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:38: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:38: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:39: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:39: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:40: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:40: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:41: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:41: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:42: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:42: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:44: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:44: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:51: ERROR:CODE_INDENT: code indent should use tabs where possible
+./vector/src/vector/memory.c:51: WARNING:LEADING_SPACE: please, no spaces at the start of a line
+./vector/src/vector/memory.c:52: WARNING:MISSING_EOF_NEWLINE: adding a line without newline at end of file
+./bin/build_linux_cc_mingw64:2: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 2
+./bin/build_linux:2: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 2
+./bin/build_linux-debug:2: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 2
+./bin/check_style:2: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 2
+./bin/build_linux-release:2: WARNING:SPDX_LICENSE_TAG: Missing or malformed SPDX-License-Identifier tag in line 2
+./bin/build_linux-release:14: ERROR:TRAILING_WHITESPACE: trailing whitespace
+~/Documents/Projects/Github/vector/bin
