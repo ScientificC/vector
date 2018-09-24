@@ -11,9 +11,9 @@
 void *
 vector_get(vector_t *vector, size_t index) 
 {
-	VECTOR_NULL_POINTER_VAL(vector);
-	VECTOR_INVALID_INDEX_VAL(vector, index);
-	VECTOR_INVALID_ELEM_SIZE_VAL(vector);
+	VECTOR_NULL_POINTER_VAL(vector, NULL);
+	VECTOR_INVALID_INDEX_VAL(vector, index, NULL);
+	VECTOR_INVALID_ELEM_SIZE_VAL(vector, NULL);
 
 	return _vector_offset(vector, index);
 }
@@ -22,9 +22,9 @@ vector_get(vector_t *vector, size_t index)
 const void *
 vector_const_get(const vector_t *vector, size_t index) 
 {
-	VECTOR_NULL_POINTER_VAL(vector);
-	VECTOR_INVALID_INDEX_VAL(vector, index);
-	VECTOR_INVALID_ELEM_SIZE_VAL(vector);
+	VECTOR_NULL_POINTER_VAL(vector, NULL);
+	VECTOR_INVALID_INDEX_VAL(vector, index, NULL);
+	VECTOR_INVALID_ELEM_SIZE_VAL(vector, NULL);
 
 	return _vector_const_offset(vector, index);
 }

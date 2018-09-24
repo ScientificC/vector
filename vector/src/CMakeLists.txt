@@ -32,7 +32,7 @@ IF(VECTOR_BUILD_STATIC)
 	ADD_LIBRARY(scic-vector-static STATIC ${VECTOR_LIB_SRCS})
 	SET_TARGET_PROPERTIES(scic-vector-static PROPERTIES LINKER_LANGUAGE C)
 
-	find_library(SCIC_ERRNO_LIB scic-errno)
+	find_library(SCIC_ERRNO_LIB scic-errno REQUIRED)
 	target_link_libraries(scic-vector-static ${SCIC_ERRNO_LIB})
 
 	if(CMAKE_COMPILER_IS_GNUC)
@@ -55,7 +55,7 @@ IF(VECTOR_BUILD_SHARED)
 	list(APPEND VECTOR_LIB_TARGET scic-vector)
 	SET_TARGET_PROPERTIES(scic-vector PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 
-	find_library(SCIC_ERRNO_LIB scic-errno)
+	find_library(SCIC_ERRNO_LIB scic-errno REQUIRED)
 	target_link_libraries(scic-vector ${SCIC_ERRNO_LIB})
 
 	IF(LINUX)
