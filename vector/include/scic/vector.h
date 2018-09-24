@@ -11,6 +11,7 @@
 #define VECTOR_UNINITIALIZED NULL
 #define VECTOR_INITIALIZER { 0, 0, 0, VECTOR_UNINITIALIZED }
 
+
 /*
  * Structures
  */

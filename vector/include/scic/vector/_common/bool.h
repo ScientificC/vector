@@ -1,9 +1,9 @@
-#ifndef _SCIC_COMMON_H_
+#ifndef _SCIC_VECTOR_COMMON_H_
 #error "Never use <scic/vector/_common/bool.h> directly; include <cml.h> instead."
 #endif
 
-#ifndef SCIC_BOOL_H
-#define SCIC_BOOL_H
+#ifndef SCIC_VECTOR_BOOL_H
+#define SCIC_VECTOR_BOOL_H
 
 #ifndef __cplusplus
 

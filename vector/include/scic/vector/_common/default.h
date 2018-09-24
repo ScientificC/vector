@@ -1,9 +1,9 @@
-#ifndef _SCIC_COMMON_H_
+#ifndef _SCIC_VECTOR_COMMON_H_
 #error "Never use <scic/vector/_common/default.h> directly; include <cml.h> instead."
 #endif
 
-#ifndef SCIC_DEFAULT_H
-#define SCIC_DEFAULT_H
+#ifndef SCIC_VECTOR_DEFAULT_H
+#define SCIC_VECTOR_DEFAULT_H
 
 /* Check C standard */
 #ifdef __STDC__
@@ -18,15 +18,15 @@
         #endif
 #endif
 
-#define __SCIC_BEGIN_DECLS
-#define __SCIC_END_DECLS
+#define __SCIC_VECTOR_BEGIN_DECLS
+#define __SCIC_VECTOR_END_DECLS
 
 #ifdef __cplusplus
-        #undef __SCIC_BEGIN_DECLS
-        #undef __SCIC_END_DECLS
+        #undef __SCIC_VECTOR_BEGIN_DECLS
+        #undef __SCIC_VECTOR_END_DECLS
 
-        #define __SCIC_BEGIN_DECLS extern "C" {
-        #define __SCIC_END_DECLS }
+        #define __SCIC_VECTOR_BEGIN_DECLS extern "C" {
+        #define __SCIC_VECTOR_END_DECLS }
 
         #if __cplusplus >= 199901L
                 #define PREDEF_STANDARD_CPP99
@@ -37,37 +37,37 @@
 #endif
 
 #ifndef PREDEF_STANDARD_C11
-        #undef __SCIC_NO_GENERIC
-        #define __SCIC_NO_GENERIC
+        #undef __SCIC_VECTOR_NO_GENERIC
+        #define __SCIC_VECTOR_NO_GENERIC
 #endif
 
-#define __SCIC_ARGS_FIRST(A, ...) A
+#define __SCIC_VECTOR_ARGS_FIRST(A, ...) A
 
-#ifndef __SCIC_TYPE
-        #define __SCIC_TYPE(__e, __t) \
+#ifndef __SCIC_VECTOR_TYPE
+        #define __SCIC_VECTOR_TYPE(__e, __t) \
         __builtin_types_compatible_p(__typeof(__e), __t)
 #endif
 
-#ifndef __SCIC_SAME_TYPE
-        #define __SCIC_SAME_TYPE(__a, __b) \
+#ifndef __SCIC_VECTOR_SAME_TYPE
+        #define __SCIC_VECTOR_SAME_TYPE(__a, __b) \
         __builtin_types_compatible_p(__typeof(__a), __typeof(__b))
 #endif
 
-#if defined(SCIC_RANGE_CHECK_OFF) || !defined(SCIC_RANGE_CHECK)
-#define SCIC_RANGE_CHECK 0  /* turn off range checking by default internally */
+#if defined(SCIC_VECTOR_RANGE_CHECK_OFF) || !defined(SCIC_VECTOR_RANGE_CHECK)
+#define SCIC_VECTOR_RANGE_CHECK 0  /* turn off range checking by default internally */
 #endif
 
 #define RETURN_IF_NULL(x) if (!x) { return; }
 
 /* Quick boolean definition */
-#ifdef SCIC_NO_STDBOOL
+#ifdef SCIC_VECTOR_NO_STDBOOL
         #include <scic/vector/_common/bool.h>
 #else
         #include <stdbool.h>
 #endif
 
 #ifndef mint_t
-        #ifdef SCIC_NO_STDINT
+        #ifdef SCIC_VECTOR_NO_STDINT
                 #define mint_t int
         #else
                 #include <stdint.h>
