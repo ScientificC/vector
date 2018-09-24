@@ -54,10 +54,11 @@
 #endif
 
 #if defined(SCIC_VECTOR_RANGE_CHECK_OFF) || !defined(SCIC_VECTOR_RANGE_CHECK)
-#define SCIC_VECTOR_RANGE_CHECK 0  /* turn off range checking by default internally */
+/* turn off range checking by default internally */
+#define SCIC_VECTOR_RANGE_CHECK 0
 #endif
 
-#define RETURN_IF_NULL(x) if (!x) { return; }
+#define RETURN_IF_NULL(x) do { if (!(x)) return; } while (0)
 
 /* Quick boolean definition */
 #ifdef SCIC_VECTOR_NO_STDBOOL

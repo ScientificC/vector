@@ -11,7 +11,6 @@
 #define VECTOR_UNINITIALIZED NULL
 #define VECTOR_INITIALIZER { 0, 0, 0, VECTOR_UNINITIALIZED }
 
-
 /*
  * Structures
  */
@@ -70,8 +69,8 @@ void *vector_get(vector_t *vector, size_t index);
 const void *vector_const_get(const vector_t *vector, size_t index);
 void *vector_front(vector_t *vector);
 void *vector_back(vector_t *vector);
-#define VECTOR_GET_AS(type, vector_pointer, index) \
-	*((type*)vector_get((vector_pointer), (index)))
+#define VECTOR_GET_AS(type, vector_pointer, index)  \
+	*((type *)vector_get((vector_pointer), (index)))
 
 /* Information */
 bool vector_is_initialized(const vector_t *vector);
@@ -90,7 +89,8 @@ iterator_t vector_end(vector_t *vector);
 iterator_t vector_iterator(vector_t *vector, size_t index);
 
 void *iterator_get(iterator_t *iterator);
-#define ITERATOR_GET_AS(type, iterator) *((type*)iterator_get((iterator)))
+#define ITERATOR_GET_AS(type, iterator) \
+	*((type *)iterator_get((iterator)))
 
 int iterator_erase(vector_t *vector, iterator_t *iterator);
 
@@ -106,17 +106,19 @@ bool iterator_is_after(iterator_t *first, iterator_t *second);
 
 size_t iterator_index(vector_t *vector, iterator_t *iterator);
 
-#define VECTOR_FOR_EACH(vector_pointer, iterator_name)                             \
-	for (iterator_t(iterator_name) = vector_begin((vector_pointer)),               \
-			end = vector_end((vector_pointer));                                    \
-			 !iterator_equals(&(iterator_name), &end);                             \
-			 iterator_increment(&(iterator_name)))
+#define VECTOR_FOR_EACH(vector_pointer, iterator_name, _block) do {     \
+        typeof(vector_pointer) tmp = (vector_pointer);                  \
+	for (iterator_t(iterator_name) = vector_begin(tmp),             \
+             end = vector_end(tmp);                                     \
+             !iterator_equals(&(iterator_name), &end);                  \
+             iterator_increment(&(iterator_name))) { _block }           \
+while (0)
 
 /*
  * Private
  */
 
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define MAX(a, b) (a) > (b) ? (a) : (b)
 
 bool _vector_should_grow(vector_t *vector);
 bool _vector_should_shrink(vector_t *vector);

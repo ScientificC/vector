@@ -19,7 +19,6 @@ vector_setup(vector_t *vector, size_t capacity, size_t element_size)
         return SCIC_SUCCESS;
 }
 
-
 int
 vector_copy(vector_t *destination, vector_t *source)
 {
@@ -43,7 +42,6 @@ vector_copy(vector_t *destination, vector_t *source)
         return SCIC_SUCCESS;
 }
 
-
 int
 vector_copy_assign(vector_t *destination, vector_t *source)
 {
@@ -58,7 +56,6 @@ vector_copy_assign(vector_t *destination, vector_t *source)
         return vector_copy(destination, source);
 }
 
-
 int
 vector_move(vector_t *destination, vector_t *source)
 {
@@ -71,7 +68,6 @@ vector_move(vector_t *destination, vector_t *source)
         return SCIC_SUCCESS;
 }
 
-
 int
 vector_move_assign(vector_t *destination, vector_t *source)
 {
@@ -79,7 +75,6 @@ vector_move_assign(vector_t *destination, vector_t *source)
 
         return vector_destroy(source);
 }
-
 
 int
 vector_swap(vector_t *destination, vector_t *source)
@@ -102,7 +97,6 @@ vector_swap(vector_t *destination, vector_t *source)
 
         return SCIC_SUCCESS;
 }
-
 
 int
 vector_destroy(vector_t *vector)
