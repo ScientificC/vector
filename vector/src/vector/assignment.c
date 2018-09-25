@@ -25,15 +25,19 @@ vector_copy(vector_t *destination, vector_t *source)
         VECTOR_NULL_POINTER(source);
         VECTOR_NULL_POINTER(destination);
 
-        if (vector_is_initialized(destination)) return SCIC_FAILURE;
-        if (!vector_is_initialized(source)) return SCIC_FAILURE;
+        if (vector_is_initialized(destination))
+                return SCIC_FAILURE;
+
+        if (!vector_is_initialized(source))
+                return SCIC_FAILURE;
 
         destination->size = source->size;
         destination->capacity = source->size * 2;
         destination->element_size = source->element_size;
 
         /* Note that we are not necessarily allocating the same capacity */
-        destination->data = malloc(source->capacity * destination->element_size);
+        destination->data = malloc(source->capacity *
+                                   destination->element_size);
 
         VECTOR_MALLOC(destination->data);
 
@@ -48,8 +52,11 @@ vector_copy_assign(vector_t *destination, vector_t *source)
         VECTOR_NULL_POINTER(source);
         VECTOR_NULL_POINTER(destination);
 
-        if (vector_is_initialized(destination)) return SCIC_FAILURE;
-        if (!vector_is_initialized(source)) return SCIC_FAILURE;
+        if (vector_is_initialized(destination))
+                return SCIC_FAILURE;
+
+        if (!vector_is_initialized(source))
+                return SCIC_FAILURE;
 
         vector_destroy(destination);
 
@@ -84,8 +91,11 @@ vector_swap(vector_t *destination, vector_t *source)
         VECTOR_MALLOC(source);
         VECTOR_MALLOC(destination);
 
-        if (!vector_is_initialized(destination)) return SCIC_FAILURE;
-        if (!vector_is_initialized(source)) return SCIC_FAILURE;
+        if (!vector_is_initialized(destination))
+                return SCIC_FAILURE;
+
+        if (!vector_is_initialized(source))
+                return SCIC_FAILURE;
 
         _vector_swap(&destination->size, &source->size);
         _vector_swap(&destination->capacity, &source->capacity);
