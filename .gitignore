@@ -56,3 +56,4 @@ build/*
 tmp/*
 install/*
 docs/build/*
+bin/checkpatch.pl
