@@ -16,7 +16,7 @@ vector_begin(vector_t *vector)
 iterator_t
 vector_end(vector_t *vector)
 {
-	return vector_iterator(vector, vector->size);
+	return vector_iterator(vector, vector->size - 1);
 }
 
 iterator_t

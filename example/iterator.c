@@ -2,14 +2,15 @@
 #include <scic/vector.h>
 #include <float.h>
 
-static size_t size = 1000000;
+static size_t size = 5;
 
 int
 main(int argc, const char *argv[])
 {
+        iterator_t iterator, last;
         vector_t vector;
-        int x, y, sum;
-        float w;
+        int x, y;
+        float w, sum;
 
         /* Choose initial capacity */
         /* Specify the size of the elements you want to store once */
@@ -22,20 +23,24 @@ main(int argc, const char *argv[])
 
         printf("Length: %d - %.2f\n", vector.size, VECTOR_GET_AS(float, &vector, vector.size - 1));
 
-        vector_resize(&vector, size/2);
+        /* iterator support */
+	iterator = vector_begin(&vector);
+	last = vector_end(&vector);
 
-        printf("Length: %d - %.2f\n", vector.size, VECTOR_GET_AS(float, &vector, vector.size - 1));
+	for (; !iterator_equals(&iterator, &last); iterator_increment(&iterator)) {
+		*(float*) iterator_get(&iterator) += 1;
+	}
 
-        vector_resize(&vector, size*4);
+	/* Or just use pretty macros */
+        iterator = vector_begin(&vector);
+	last = vector_end(&vector);
 
-        vector_clear(&vector);
+	sum = 0;
+	VECTOR_FOR_EACH(&vector, i, {
+		sum += ITERATOR_GET_AS(float, &i);
+	});
 
-        for (size_t i = 0; i < 4*size; i++) {
-                w = (float) i;
-                vector_push_back(&vector, &w);
-        }
-
-        printf("Length: %d - %.2f\n", vector.size, VECTOR_GET_AS(float, &vector, vector.size - 1));
+        printf("Sum: %f", sum);
 
         vector_clear(&vector);
         vector_destroy(&vector);

@@ -112,7 +112,7 @@ size_t iterator_index(vector_t *vector, iterator_t *iterator);
              end = vector_end(tmp);                                     \
              !iterator_equals(&(iterator_name), &end);                  \
              iterator_increment(&(iterator_name))) { _block }           \
-while (0)
+} while (0)
 
 /*
  * Private

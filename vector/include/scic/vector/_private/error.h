@@ -81,7 +81,7 @@
 } while (0)
 
 #define VECTOR_INVALID_ELEM_SIZE_COMPARISON_VAL(_f, _s, _val) do {         \
-        if ((_f)->element_size == (_s)->element_size)                      \
+        if ((_f)->element_size != (_s)->element_size)                      \
                 SCIC_ERROR_VAL(                                            \
                         "the elem size is not valid",                      \
                         SCIC_EINVAL,                                       \

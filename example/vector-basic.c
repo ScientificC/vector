@@ -4,10 +4,11 @@
 int
 main(int argc, const char *argv[])
 {
-        vector_t vector;
+        vector_t
+} vector;
         int x, y, sum;
 
-        /* Choose initial capacity of 10 */
+        /* Choose initial capacity */
         /* Specify the size of the elements you want to store once */
         vector_setup(&vector, 10, sizeof(int));
 
@@ -29,4 +30,3 @@ main(int argc, const char *argv[])
 
         vector_clear(&vector);
         vector_destroy(&vector);
-}
