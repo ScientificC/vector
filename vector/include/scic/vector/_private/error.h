@@ -32,7 +32,7 @@
                 );                                                         \
 } while (0)
 
-#define VECTOR_INVALID_ELEM_SIZE(_vector_pointer) do {                     \
+#define VECTOR_INVALID_VECTOR_SIZE(_vector_pointer) do {                   \
         if (!(_vector_pointer)->size)                                      \
                 SCIC_ERROR(                                                \
                         "failed access to empty array",                    \
@@ -71,12 +71,33 @@
                 );                                                         \
 } while (0)
 
-#define VECTOR_INVALID_ELEM_SIZE_VAL(_vector_pointer, _val) do {           \
+#define VECTOR_INVALID_VECTOR_SIZE_VAL(_vector_pointer, _val) do {         \
         if (!(_vector_pointer)->size)                                      \
                 SCIC_ERROR_VAL(                                            \
                         "failed access to empty array",                    \
                         SCIC_EINVAL,                                       \
                         _val                                               \
+                );                                                         \
+} while (0)
+
+#define VECTOR_INVALID_ELEM_SIZE_COMPARISON_VAL(_f, _s, _val) do {         \
+        if ((_f)->element_size == (_s)->element_size)                      \
+                SCIC_ERROR_VAL(                                            \
+                        "the elem size is not valid",                      \
+                        SCIC_EINVAL,                                       \
+                        _val                                               \
+                );                                                         \
+} while (0)
+
+/*
+ * VOID error handlers
+ */
+
+#define VECTOR_NULL_ITERATOR_POINTER_VOID(_pointer) do {                   \
+        if ((_pointer) == NULL)                                            \
+                SCIC_ERROR_VOID(                                           \
+                        "failed to allocate space for iterator",           \
+                        SCIC_ENOMEM                                        \
                 );                                                         \
 } while (0)
 

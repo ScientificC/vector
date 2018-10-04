@@ -1,4 +1,12 @@
 ~/Documents/Projects/Github/vector/bin ~/Documents/Projects/Github/vector/bin
+./example/big-vector.c:19: CHECK:SPACING: No space is necessary after a cast
+./example/big-vector.c:23: WARNING:LONG_LINE: line over 80 characters
+./example/big-vector.c:25: CHECK:SPACING: spaces preferred around that '/' (ctx:VxV)
+./example/big-vector.c:27: WARNING:LONG_LINE: line over 80 characters
+./example/big-vector.c:29: CHECK:SPACING: spaces preferred around that '*' (ctx:VxV)
+./example/big-vector.c:33: CHECK:SPACING: spaces preferred around that '*' (ctx:VxV)
+./example/big-vector.c:34: CHECK:SPACING: No space is necessary after a cast
+./example/big-vector.c:38: WARNING:LONG_LINE: line over 80 characters
 ./example/vector-basic.c:24: WARNING:LONG_LINE: line over 80 characters
 ./vector/include/scic/vector.h:18: WARNING:CONST_STRUCT: struct  should normally be const
 ./vector/include/scic/vector.h:26: WARNING:CONST_STRUCT: struct  should normally be const

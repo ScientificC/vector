@@ -38,7 +38,7 @@ vector_erase(vector_t *vector, size_t index)
 {
         VECTOR_NULL_POINTER(vector);
         VECTOR_INVALID_INDEX(vector, index);
-	VECTOR_INVALID_ELEM_SIZE(vector);
+	VECTOR_INVALID_VECTOR_SIZE(vector);
 
 	/* Just overwrite */
 	_vector_move_left(vector, index);

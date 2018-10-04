@@ -42,7 +42,7 @@ vector_insert(vector_t *vector, size_t index, void *element)
 
         VECTOR_NULL_POINTER(vector);
         VECTOR_INVALID_INDEX(vector, index);
-        VECTOR_INVALID_ELEM_SIZE(vector);
+        VECTOR_INVALID_VECTOR_SIZE(vector);
 
 	if (_vector_should_grow(vector)) {
                 errno = _vector_adjust_capacity(vector);
@@ -71,7 +71,7 @@ vector_assign(vector_t *vector, size_t index, void *element)
 {
 	VECTOR_NULL_POINTER(vector);
         VECTOR_INVALID_INDEX(vector, index);
-        VECTOR_INVALID_ELEM_SIZE(vector);
+        VECTOR_INVALID_VECTOR_SIZE(vector);
 
 	_vector_assign(vector, index, element);
 
