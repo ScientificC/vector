@@ -32,10 +32,8 @@ main(int argc, const char *argv[])
 	}
 
 	/* Or just use pretty macros */
-        iterator = vector_begin(&vector);
-	last = vector_end(&vector);
-
 	sum = 0;
+        
 	VECTOR_FOR_EACH(&vector, i, {
 		sum += ITERATOR_GET_AS(float, &i);
 	});
