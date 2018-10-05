@@ -38,7 +38,7 @@ main(int argc, const char *argv[])
 		sum += ITERATOR_GET_AS(float, &i);
 	});
 
-        printf("Sum: %f", sum);
+        printf("Sum: %.2f", sum);
 
         vector_clear(&vector);
         vector_destroy(&vector);

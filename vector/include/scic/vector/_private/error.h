@@ -63,7 +63,7 @@
 } while (0)
 
 #define VECTOR_INVALID_INDEX_VAL(_vector_pointer, _index, _val) do {       \
-        if ((_index) >= (_vector_pointer)->size)                           \
+        if ((_index) > (_vector_pointer)->size)                            \
                 SCIC_ERROR_VAL(                                            \
                         "failed to access to invalid index",               \
                         SCIC_EINVAL,                                       \

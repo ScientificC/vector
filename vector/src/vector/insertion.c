@@ -41,8 +41,11 @@ vector_insert(vector_t *vector, size_t index, void *element)
         int errno;
 
         VECTOR_NULL_POINTER(vector);
-        VECTOR_INVALID_INDEX(vector, index);
         VECTOR_INVALID_VECTOR_SIZE(vector);
+
+        if (index > vector->size)
+                SCIC_ERROR("failed to insert element in invalid index",
+                           SCIC_EINVAL);
 
 	if (_vector_should_grow(vector)) {
                 errno = _vector_adjust_capacity(vector);

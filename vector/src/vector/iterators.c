@@ -16,7 +16,7 @@ vector_begin(vector_t *vector)
 iterator_t
 vector_end(vector_t *vector)
 {
-	return vector_iterator(vector, vector->size - 1);
+	return vector_iterator(vector, vector->size);
 }
 
 iterator_t
@@ -25,8 +25,11 @@ vector_iterator(vector_t *vector, size_t index)
 	iterator_t iterator = { NULL, 0 };
 
 	VECTOR_NULL_POINTER_VAL(vector, iterator);
-	VECTOR_INVALID_INDEX_VAL(vector, index, iterator);
 	VECTOR_INVALID_VECTOR_SIZE_VAL(vector, iterator);
+
+        if (index > vector->size)
+                SCIC_ERROR_VAL("failed to access to invalid index",
+                           SCIC_EINVAL, iterator);
 
 	iterator.pointer = _vector_offset(vector, index);
 	iterator.element_size = vector->element_size;
