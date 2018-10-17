@@ -4,8 +4,7 @@
 int
 main(int argc, const char *argv[])
 {
-        vector_t
-} vector;
+        vector_t vector;
         int x, y, sum;
 
         /* Choose initial capacity */
@@ -30,3 +29,4 @@ main(int argc, const char *argv[])
 
         vector_clear(&vector);
         vector_destroy(&vector);
+}
