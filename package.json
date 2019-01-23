@@ -1,0 +1,12 @@
+{
+  "name": "vector",
+  "version": "1.0.0",
+  "repo": "ScientificC/cmathl",
+  "description": "A pure C vector implementation with CMake build support",
+  "keywords": [],
+  "license": "MIT",
+  "install": "./install.sh",
+  "development": {
+    "ScientificC/errno": "1.0.0"
+  }
+}
