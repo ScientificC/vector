@@ -1,7 +1,7 @@
 {
   "name": "vector",
   "version": "1.0.0",
-  "repo": "ScientificC/cmathl",
+  "repo": "ScientificC/vector",
   "description": "A pure C vector implementation with CMake build support",
   "keywords": [],
   "license": "MIT",
