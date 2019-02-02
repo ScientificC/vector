@@ -117,7 +117,7 @@ size_t
 iterator_index(vector_t *vector, iterator_t *iterator)
 {
 	VECTOR_NULL_POINTER(vector);
-	VECTOR_NULL_ITERATOR_POINTER_VOID(iterator);
+	VECTOR_NULL_POINTER_VAL(iterator, -1);
 
 	return (iterator->pointer - vector->data) / vector->element_size;
 }
