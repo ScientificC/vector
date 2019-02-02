@@ -107,7 +107,7 @@ bool iterator_is_after(iterator_t *first, iterator_t *second);
 size_t iterator_index(vector_t *vector, iterator_t *iterator);
 
 #define VECTOR_FOR_EACH(vector_pointer, iterator_name, _block) do {     \
-        vector_t *vector_pointer tmp = (vector_pointer);                  \
+        vector_t *tmp = (vector_pointer);                  \
 	for (iterator_t(iterator_name) = vector_begin(tmp),             \
              end = vector_end(tmp);                                     \
              !iterator_equals(&(iterator_name), &end);                  \
