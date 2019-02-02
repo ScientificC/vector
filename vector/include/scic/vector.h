@@ -108,7 +108,8 @@ size_t iterator_index(vector_t *vector, iterator_t *iterator);
 
 #define VECTOR_FOR_EACH(vector_pointer, iterator_name, _block) do {     \
         iterator_t(iterator_name);                                      \
-	for (iterator_name = vector_begin(vector_pointer),  \
+        iterator_t end;                                                 \
+	for (iterator_name = vector_begin(vector_pointer),              \
              end = vector_end(vector_pointer);                          \
              !iterator_equals(&(iterator_name), &end);                  \
              iterator_increment(&(iterator_name))) { _block }           \
