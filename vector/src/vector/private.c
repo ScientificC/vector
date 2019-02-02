@@ -8,7 +8,7 @@
 bool
 _vector_should_grow(vector_t *vector)
 {
-        // TODO: assert(vector->size <= vector->capacity);
+        /* TODO: assert(vector->size <= vector->capacity); */
 
         return vector->size == vector->capacity;
 }
@@ -16,7 +16,7 @@ _vector_should_grow(vector_t *vector)
 bool
 _vector_should_shrink(vector_t *vector)
 {
-        // TODO: assert(vector->size <= vector->capacity);
+        /* TODO: assert(vector->size <= vector->capacity); */
 
         return vector->size == vector->capacity * VECTOR_SHRINK_THRESHOLD;
 }
@@ -51,7 +51,7 @@ _vector_assign(vector_t *vector, size_t index, void *element)
 int
 _vector_move_right(vector_t *vector, size_t index)
 {
-        // TODO: assert(vector->size < vector->capacity);
+        /* TODO: assert(vector->size < vector->capacity); */
 
         /* The location where to start to move from. */
         void *offset = _vector_offset(vector, index);
