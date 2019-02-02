@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdbool.h>
 #include <scic/errno.h>
 #include <scic/vector.h>
 

@@ -1,11 +1,8 @@
 #include <stdlib.h>
+#include <stdbool.h>
 #include <string.h>
 #include <scic/errno.h>
 #include <scic/vector.h>
-
-#define _SCIC_VECTOR_COMMON_H_ 1
-
-#include <scic/vector/_common/bool.h>
 #include <scic/vector/_private/error.h>
 
 int
