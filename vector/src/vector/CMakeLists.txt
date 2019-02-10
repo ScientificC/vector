@@ -1,6 +1,7 @@
 add_library(vector OBJECT
   assignment.c
   deletion.c
+  functional.c
   information.c
   insertion.c
   iterators.c

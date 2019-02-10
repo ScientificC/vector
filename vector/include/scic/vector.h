@@ -1,7 +1,10 @@
 #ifndef SCIC_VECTOR_H
 #define SCIC_VECTOR_H
 
-#include <stdbool.h>
+#define _SCIC_VECTOR_COMMON_H_ 1
+#include <scic/vector/_common/bool.h>
+#undef _SCIC_VECTOR_COMMON_H_
+
 #include <stddef.h>
 
 #define VECTOR_MINIMUM_CAPACITY 2
@@ -27,6 +30,8 @@ typedef struct _iterator_t {
 	void *pointer;
 	size_t element_size;
 } iterator_t;
+
+#define CAST_TO(_type, _x) *((_type *) _x)
 
 /*
  * Behaviour
@@ -114,6 +119,14 @@ size_t iterator_index(vector_t *vector, iterator_t *iterator);
              !iterator_equals(&(iterator_name), &end);                  \
              iterator_increment(&(iterator_name))) { _block }           \
 } while (0)
+
+/*
+ * Functional 
+ */
+
+typedef void (*vector_reduce_fn_t)(void *, const void *, size_t, vector_t *);
+
+void *vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value);
 
 /*
  * Private

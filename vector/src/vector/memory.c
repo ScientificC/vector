@@ -1,8 +1,6 @@
 #include <stdlib.h>
-#include <stdbool.h>
 #include <scic/errno.h>
 #include <scic/vector.h>
-
 #include <scic/vector/_private/error.h>
 
 int

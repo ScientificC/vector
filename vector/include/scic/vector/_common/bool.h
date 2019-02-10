@@ -1,5 +1,5 @@
 #ifndef _SCIC_VECTOR_COMMON_H_
-#error "Never use <scic/vector/_common/bool.h> directly; include <cml.h> instead."
+#error "Never use <scic/vector/_common/bool.h> directly; include <scic/vector.h> instead."
 #endif
 
 #ifndef SCIC_VECTOR_BOOL_H
