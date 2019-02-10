@@ -9,10 +9,10 @@
         anon_fn_name;                     \
 })
 
-typedef void (*reduce_fn_t)(void *, const void *, vector_t *, size_t i);
+typedef void (*reduce_fn_t)(void *, const void *, size_t, vector_t *);
 
 void
-vector_reduce(vector_t *vector, void *result, reduce_fn_t f)
+vector_reduce(vector_t *vector, reduce_fn_t f, void *result)
 {
         iterator_t iterator, last;
         size_t index = 0;
@@ -21,7 +21,7 @@ vector_reduce(vector_t *vector, void *result, reduce_fn_t f)
 	last = vector_end(vector);
 
 	for (; !iterator_equals(&iterator, &last); iterator_increment(&iterator)) {
-		f(result, iterator_get(&iterator), vector, index++);
+		f(result, iterator_get(&iterator), index++, vector);
 	};
 }
 
@@ -37,14 +37,14 @@ main(int argc, char const *argv[])
         vector_push_back(&v, &x);
         vector_push_back(&v, &y);
 
-        vector_reduce(&v, &result, lambda(void, (void *r, const void *x, vector_t *xs, size_t i)
+        vector_reduce(&v, lambda(void, (void *r, const void *x, size_t i, vector_t *xs)
         {
                 /* Get real values from memory */                
                 double _r = CAST_TO(double, r); 
                 double _x = CAST_TO(double, x);
 
                 CAST_TO(double, r) = _r + _x;
-        }));
+        }), &result);
 
         printf("Sum: %g\n", result);
 
