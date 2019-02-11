@@ -14,7 +14,7 @@ main(int argc, char const *argv[])
         vector_reduce_fn_t sum;
         vector_t v;
 
-        double x = 2, y = 3, initial = 0.0;
+        double x = 2.0, y = 3.0, initial = 0.0;
         void *result;
 
         vector_setup(&v, 2, sizeof(double));
@@ -31,7 +31,7 @@ main(int argc, char const *argv[])
                 CAST_TO(double, r) = _r + _x;
         });
 
-        result = vector_reduce(&v, sum, &initial);
+        result = vector_reduce(&v, sum, &initial, sizeof(double));
 
         printf("Sum: %g\n", CAST_TO(double, result));
 

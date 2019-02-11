@@ -5,7 +5,7 @@
 #include <scic/vector/_private/error.h>
 
 void *
-vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value)
+vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value, size_t result_size)
 {
         iterator_t iterator, last;
         size_t index = 0;
@@ -13,11 +13,11 @@ vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value)
 
         VECTOR_NULL_POINTER_VAL(initial_value, NULL);
         
-        result = malloc(vector->element_size);
+        result = malloc(result_size);
 
         VECTOR_MALLOC_VAL(result, NULL);
 
-        memcpy(result, initial_value, vector->element_size);
+        memcpy(result, initial_value, result_size);
 
         iterator = vector_begin(vector);
 	last = vector_end(vector);

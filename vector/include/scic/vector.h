@@ -126,7 +126,7 @@ size_t iterator_index(vector_t *vector, iterator_t *iterator);
 
 typedef void (*vector_reduce_fn_t)(void *, const void *, size_t, vector_t *);
 
-void *vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value);
+void *vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value, size_t result_size);
 
 /*
  * Private
