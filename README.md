@@ -155,16 +155,11 @@ main(int argc, char const *argv[])
         vector_push_back(&v, &z);
 
         is_positive = lambda(bool, (const void *x, size_t i, vector_t *xs) {
-                double _x = CAST_TO(double, x);
-
-                return _x >= 0.0;
+                return CAST_TO(double, x) >= 0.0;
         });
 
         inc = lambda(void, (const void *r, const void *x, size_t i, vector_t *xs) {
-                double _r = CAST_TO(double, r);
-                double _x = CAST_TO(double, x);
-
-                CAST_TO(double, r) = _x + 1.0;
+                CAST_TO(double, r) = CAST_TO(double, x) + 1.0;
         });
 
         sum = lambda(void, (void *r, const void *x, size_t i, vector_t *xs)
@@ -173,6 +168,7 @@ main(int argc, char const *argv[])
                 double _r = CAST_TO(double, r);
                 double _x = CAST_TO(double, x);
 
+                /* Set value in memory */
                 CAST_TO(double, r) = _r + _x;
         });
 
