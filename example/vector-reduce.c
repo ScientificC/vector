@@ -55,5 +55,9 @@ main(int argc, char const *argv[])
 
         printf("Sum: %g\n", CAST_TO(double, result));
 
+        vector_destroy(&v);
+        vector_destroy(positive_nums);
+        vector_destroy(incs);
+
         return 0;
 }
