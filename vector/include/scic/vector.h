@@ -124,8 +124,12 @@ size_t iterator_index(vector_t *vector, iterator_t *iterator);
  * Functional 
  */
 
+typedef bool (*vector_filter_fn_t)(const void *, size_t, vector_t *);
+typedef void (*vector_map_fn_t)(const void *, const void *, size_t, vector_t *);
 typedef void (*vector_reduce_fn_t)(void *, const void *, size_t, vector_t *);
 
+vector_t *vector_filter(vector_t *vector, vector_filter_fn_t f, size_t result_size);
+vector_t *vector_map(vector_t *vector, vector_map_fn_t f, size_t result_size);
 void *vector_reduce(vector_t *vector, vector_reduce_fn_t f, void *initial_value, size_t result_size);
 
 /*
