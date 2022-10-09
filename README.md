@@ -28,11 +28,8 @@ or,
 
 ```shell
 $ git clone https://github.com/ScientificC/vector.git
-$ cd cml
-$ mkdir build
-$ cd build
-$ cmake .. <build options>
-$ make && make install
+$ cd vector
+$ ./install.sh
 ```
 
 ## Examples
